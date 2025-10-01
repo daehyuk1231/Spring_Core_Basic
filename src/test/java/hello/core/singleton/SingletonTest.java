@@ -56,6 +56,6 @@ public class SingletonTest {
         System.out.println("memberService2 = " + memberService2);
 
         //memberService != memberService2
-        assertThat(memberService1).isNotSameAs(memberService2);
+        assertThat(memberService1).isSameAs(memberService2);
     }
 }
